@@ -1,0 +1,9 @@
+.descriptionBlock {
+    padding: 20px;
+}
+
+.image {
+    height: 500px;
+    background: url('https://image.freepik.com/free-photo/donut-cup-of-coffee-and-hearts-good-morning-greeting-written-on-marble-gray_113876-20.jpg') center center;
+    background-size: cover;
+}

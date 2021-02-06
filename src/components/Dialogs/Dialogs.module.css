@@ -1,15 +1,28 @@
 .dialogs {
     display: grid;
     grid-template-columns: 2fr 10fr;
+    padding: 20px;
 }
 
 .dialogsItems {
-    padding: 20px;
 
 }
 
-.dialogsItems .active {
+.dialog a {
+    color: #000000;
+    text-decoration: none;
+    line-height: 40px;
+    outline: none;
+}
+
+.dialog a:hover{
     color:#795548;
+    cursor: pointer;
+}
+
+
+.dialog a.active {
+    color: #795548;
 }
 
 .dialog {
@@ -17,9 +30,5 @@
 }
 
 .messages {
-    padding: 20px
 }
 
-.message {
-    line-height: 40px;
-}

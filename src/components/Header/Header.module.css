@@ -4,7 +4,8 @@
   grid-area: h;
   letter-spacing: 1px;
   height: 80px;
-  background: #0097A7;
+  background: rgb(0,151,167);
+  background: linear-gradient(90deg, rgba(0,151,167,1) 0%, rgba(0,151,167,0.8855917366946778) 41%, rgba(171,231,244,1) 88%);
   color: #fff;
 }
 
