@@ -6,10 +6,9 @@
 
 .item a{
   text-transform: uppercase;
-  font-family: "Arial", sans-serif;
   color: #000000;
   text-decoration: none;
-  line-height: 43px;
+  line-height: 40px;
   outline:none;
 }
 .item a:hover{
