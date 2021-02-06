@@ -1,28 +1,22 @@
 .nav {
   grid-area: n;
   background-color: #0097A7;
+  padding: 20px;
 }
 
-.nav a{
+.item a{
   text-transform: uppercase;
   font-family: "Arial", sans-serif;
   color: #000000;
   text-decoration: none;
-  padding: 0 40px;
   line-height: 43px;
   outline:none;
 }
-.nav a:hover{
-  color:#fff;
+.item a:hover{
+  color:gold;
   cursor: pointer;
 }
 
-.item:hover{
-  background:#795548;
-  transition: all 0.5s ease;
-}
-
-
-.item.active {
-  color: rgb(185, 125, 28);
+.item a.active {
+  color: gold;
 }
