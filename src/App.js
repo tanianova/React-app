@@ -9,7 +9,7 @@ import Dialogs from "./components/Dialogs/Dialogs";
 import Settings from "./components/Settings/Settings";
 import Music from "./components/Music/Music";
 import News from "./components/News/News";
-import {updateNewPostText} from "./redux/state";
+import {addMessage, updateNewPostText} from "./redux/state";
 
 
 const App = (props) => {
@@ -20,7 +20,9 @@ const App = (props) => {
             <div className="app-wrapper-content ">
                 <Route path='/dialogs'
                        render={() => <Dialogs
-                           state={props.state.dialogsPage}/>}/>
+                           state={props.state.dialogsPage}
+                           addMessage={props.addMessage}
+                           updateNewMessageText={props.updateNewMessageText}/>}/>
                 <Route path='/profile'
                        render={() => <Profile
                            profilePage={props.state.profilePage}

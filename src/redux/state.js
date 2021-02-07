@@ -25,6 +25,10 @@ let state = {
             {id: 4, name: 'user4'},
             {id: 5, name: 'user5'},
         ],
+        newDialog: {
+            user: 'user1',
+            message: 'hi'
+        }
     },
 }
 
@@ -42,6 +46,21 @@ export let addPost = () => {
 
 export let updateNewPostText = (newText) => {
     state.profilePage.newPostText = newText;
+    rerenderEntireTree(state);
+}
+
+export let addMessage = () => {
+    let newMessage = {
+        id: 1,
+        message: state.dialogsPage.newDialog.message
+    };
+    state.dialogsPage.messages.push(newMessage);
+    state.dialogsPage.newDialog.message = '';
+    rerenderEntireTree(state);
+}
+
+export let updateNewMessageText = (newMessage) => {
+    state.dialogsPage.newDialog.message = newMessage;
     rerenderEntireTree(state);
 }
 
